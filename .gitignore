@@ -22,3 +22,5 @@ terraform.rc
 
 # Ignore license files
 license*yaml
+
+/terraform_ref/

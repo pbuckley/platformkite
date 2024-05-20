@@ -1,0 +1,78 @@
+schemaVersion: v1.0
+
+clusters:
+  - key: eggplant
+    name: "Eggplant"
+    description: "A versatile vegetable rich in antioxidants and vitamins."
+    emoji: ":eggplant:"
+    color: "#B565A7"
+    queues:
+      - key: "default"
+        description: "The default queue for the Dumpling cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Dumpling cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Dumpling cluster."
+        default: false
+  - key: corn
+    name: "Corn"
+    description: "A staple grain rich in fiber and vitamins."
+    emoji: ":corn:"
+    color: "#FFE79B"
+    queues:
+      - key: "default"
+        description: "The default queue for the Dumpling cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Dumpling cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Dumpling cluster."
+        default: false
+  - key: shrimp
+    name: "Shrimp"
+    description: "A high-protein seafood rich in omega-3 fatty acids."
+    emoji: ":fried_shrimp:"
+    color: "#FFA07A"
+    queues:
+      - key: "default"
+        description: "The default queue for the Dumpling cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Dumpling cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Dumpling cluster."
+        default: false
+  - key: avocado
+    name: "Avocado"
+    description: "A nutrient-dense fruit high in healthy fats and fiber."
+    emoji: ":avocado:"
+    color: "#A2CFA5"
+    queues:
+      - key: "default"
+        description: "The default queue for the Dumpling cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Dumpling cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Dumpling cluster."
+        default: false
+  - key: dumpling
+    name: "Dumpling"
+    description: "A delicious food item often filled with meat or vegetables."
+    emoji: ":dumpling:"
+    color: "#F5E6CC"
+    queues:
+      - key: "default"
+        description: "The default queue for the Dumpling cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Dumpling cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Dumpling cluster."
+        default: false

@@ -1,0 +1,58 @@
+schemaVersion: v1.0
+
+queues:
+  - cluster_key: "eggplant"
+    queues:
+      - key: "default"
+        description: "The default queue for the Eggplant cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Eggplant cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Eggplant cluster."
+        default: false
+  - cluster_key: "corn"
+    queues:
+      - key: "default"
+        description: "The default queue for the Corn cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Corn cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Corn cluster."
+        default: false
+  - cluster_key: "shrimp"
+    queues:
+      - key: "default"
+        description: "The default queue for the Shrimp cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Shrimp cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Shrimp cluster."
+        default: false
+  - cluster_key: "avocado"
+    queues:
+      - key: "default"
+        description: "The default queue for the Avocado cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Avocado cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Avocado cluster."
+        default: false
+  - cluster_key: "dumpling"
+    queues:
+      - key: "default"
+        description: "The default queue for the Dumpling cluster."
+        default: true
+      - key: "restricted"
+        description: "The restricted queue for the Dumpling cluster."
+        default: false
+      - key: "special"
+        description: "The special queue for the Dumpling cluster."
+        default: false

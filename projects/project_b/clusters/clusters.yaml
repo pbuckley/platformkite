@@ -1,0 +1,25 @@
+schemaVersion: v1.0
+
+clusters:
+  - name: "Asparagus"
+    description: "Rich in vitamins, aids digestion, and has diuretic properties."
+    emoji: ":broccoli:"
+    organization: "veggiecorp"
+    color: "#228B22"
+    queues:
+      - key: "hosted-macos-medium"
+        description: "Buildkite-hosted macOS agents with medium specs"
+        default: true
+        hosted:
+          type: "macos"
+          size: "medium"
+      - key: "self-hosted-linux-large"
+        description: "Self-hosted Linux agents with large specs"
+    tokens:
+      - description: "Windows agents"
+        allowed_ip_addresses: "202.144.0.0/24"
+    maintainers:
+      teams:
+        - ""
+      users:
+        - ""

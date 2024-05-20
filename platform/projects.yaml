@@ -1,0 +1,9 @@
+schemaVersion: v1.0
+
+projects:
+  - key: "Project A"
+    directory: "projects/project_a"
+    description: "This is the super special Project A"
+  - key: "Project B"
+    directory: "projects/project_b"
+    description: "This is the not so special Project B"

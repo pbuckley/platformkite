@@ -1,0 +1,56 @@
+schemaVersion: v1.0
+
+projects:
+  - key: "project-a"
+    name: "Project A"
+    directory: "projects/project-a"
+    description: "This is the super special Project A"
+    clusters:
+      - key: asparagus
+        name: "Asparagus"
+        description: "Rich in vitamins, aids digestion, and has diuretic properties."
+        emoji: ":broccoli:"
+        color: "#228B22"
+        queues:
+          - key: "queue-a"
+            name: "Queue A"
+            description: "This is the super special Queue A"
+            emoji: ":seedling:"
+            color: "#FFD700"
+            default: true
+          - key: "queue-b"
+            name: "Queue B"
+            description: "This is the not so special Queue B"
+            emoji: ":herb:"
+            color: "#FFA500"
+        pipelines:
+          - key: "pipeline-a"
+            name: "Pipeline A"
+            description: "This is the super special Pipeline A"
+            emoji: ":sunflower:"
+            color: "#FF6347"
+          - key: "pipeline-b"
+            name: "Pipeline B"
+            description: "This is the not so special Pipeline B"
+            emoji: ":corn:"
+            color: "#FF4500"
+      - key: kohlrabi
+        name: "Kohlrabi"
+        description: "A nutrient-dense vegetable that supports a healthy immune system."
+        emoji: ":cabbage:"
+        color: "#8FBC8F"
+  - key: "project-b"
+    name: "Project B"
+    directory: "projects/project-b"
+    description: "This is the not so special Project B"
+    clusters:
+      - key: salsify
+        name: "Salsify"
+        description: "Known for its oyster-like flavor and high fiber content."
+        emoji: ":root_vegetable:"
+        color: "#DEB887"
+      - key: celeriac
+        name: "Celeriac"
+        description: "A versatile root vegetable with a celery-like flavor."
+        emoji: ":carrot:"
+        color: "#D2691E"
