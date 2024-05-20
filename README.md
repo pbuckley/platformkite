@@ -60,6 +60,8 @@ echo 'export BUILDKITE_ORGANIZATION_SLUG=my-org' >> ~/.zshenv
 
 ## Now
 
+- Fix duplicate default queues being allowed
+
 ## Next
 
 - Packer build custom machine image based on buildkite AMI

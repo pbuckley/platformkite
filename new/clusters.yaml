@@ -8,13 +8,13 @@ clusters:
     color: "#B565A7"
     queues:
       - key: "default"
-        description: "The default queue for the Dumpling cluster."
+        description: "The default queue for the Eggplant cluster."
         default: true
       - key: "restricted"
-        description: "The restricted queue for the Dumpling cluster."
-        default: false
+        description: "The restricted queue for the Eggplant cluster."
+        default: true
       - key: "special"
-        description: "The special queue for the Dumpling cluster."
+        description: "The special queue for the Eggplant cluster."
         default: false
   - key: corn
     name: "Corn"
@@ -23,13 +23,13 @@ clusters:
     color: "#FFE79B"
     queues:
       - key: "default"
-        description: "The default queue for the Dumpling cluster."
+        description: "The default queue for the Corn cluster."
         default: true
       - key: "restricted"
-        description: "The restricted queue for the Dumpling cluster."
+        description: "The restricted queue for the Corn cluster."
         default: false
       - key: "special"
-        description: "The special queue for the Dumpling cluster."
+        description: "The special queue for the Corn cluster."
         default: false
   - key: shrimp
     name: "Shrimp"
@@ -38,13 +38,13 @@ clusters:
     color: "#FFA07A"
     queues:
       - key: "default"
-        description: "The default queue for the Dumpling cluster."
+        description: "The default queue for the Shrimp cluster."
         default: true
       - key: "restricted"
-        description: "The restricted queue for the Dumpling cluster."
+        description: "The restricted queue for the Shrimp cluster."
         default: false
       - key: "special"
-        description: "The special queue for the Dumpling cluster."
+        description: "The special queue for the Shrimp cluster."
         default: false
   - key: avocado
     name: "Avocado"
@@ -53,13 +53,13 @@ clusters:
     color: "#A2CFA5"
     queues:
       - key: "default"
-        description: "The default queue for the Dumpling cluster."
+        description: "The default queue for the Avocado cluster."
         default: true
       - key: "restricted"
-        description: "The restricted queue for the Dumpling cluster."
+        description: "The restricted queue for the Avocado cluster."
         default: false
       - key: "special"
-        description: "The special queue for the Dumpling cluster."
+        description: "The special queue for the Avocado cluster."
         default: false
   - key: dumpling
     name: "Dumpling"
