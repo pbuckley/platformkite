@@ -48,6 +48,8 @@ echo 'export BUILDKITE_ORGANIZATION_SLUG=my-org' >> ~/.zshenv
 <!-- - s3 backend for state -->
 <!-- - dynamodb lock table -->
 
+- could be a cluster per file, and the file includes config, queues, tokens
+
 - https://guide.buildkite.net/engineering/architecture/aws/tagging/index.html
 - create vpc, subnets, s3 bucket, etc.
 - upload secret

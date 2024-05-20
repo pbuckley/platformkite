@@ -1,0 +1,8 @@
+schemaVersion: v1.0
+
+clusters:
+  - key: corn
+    name: "Corn"
+    description: "A staple grain rich in fiber and vitamins."
+    emoji: ":corn:"
+    color: "#FFE79B"

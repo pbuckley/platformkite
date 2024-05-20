@@ -7,12 +7,12 @@ clusters:
     emoji: ":eggplant:"
     color: "#B565A7"
     queues:
-      - key: "default"
-        description: "The default queue for the Eggplant cluster."
+      - key: "build"
+        description: "The build queue for the Eggplant cluster."
         default: true
       - key: "restricted"
         description: "The restricted queue for the Eggplant cluster."
-        default: true
+        # default: true
       - key: "special"
         description: "The special queue for the Eggplant cluster."
         default: false
@@ -22,23 +22,23 @@ clusters:
     emoji: ":corn:"
     color: "#FFE79B"
     queues:
-      - key: "default"
-        description: "The default queue for the Corn cluster."
-        default: true
+      - key: "build"
+        description: "The build queue for the Corn cluster."
+        # default: true
       - key: "restricted"
         description: "The restricted queue for the Corn cluster."
-        default: false
+        # default: false
       - key: "special"
         description: "The special queue for the Corn cluster."
-        default: false
+        # default: false
   - key: shrimp
     name: "Shrimp"
     description: "A high-protein seafood rich in omega-3 fatty acids."
     emoji: ":fried_shrimp:"
     color: "#FFA07A"
     queues:
-      - key: "default"
-        description: "The default queue for the Shrimp cluster."
+      - key: "build"
+        description: "The build queue for the Shrimp cluster."
         default: true
       - key: "restricted"
         description: "The restricted queue for the Shrimp cluster."
@@ -52,8 +52,8 @@ clusters:
     emoji: ":avocado:"
     color: "#A2CFA5"
     queues:
-      - key: "default"
-        description: "The default queue for the Avocado cluster."
+      - key: "build"
+        description: "The build queue for the Avocado cluster."
         default: true
       - key: "restricted"
         description: "The restricted queue for the Avocado cluster."
@@ -67,8 +67,8 @@ clusters:
     emoji: ":dumpling:"
     color: "#F5E6CC"
     queues:
-      - key: "default"
-        description: "The default queue for the Dumpling cluster."
+      - key: "build"
+        description: "The build queue for the Dumpling cluster."
         default: true
       - key: "restricted"
         description: "The restricted queue for the Dumpling cluster."

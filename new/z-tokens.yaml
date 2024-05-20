@@ -1,0 +1,12 @@
+schemaVersion: v1.0
+
+defaults:
+  allowed_ip_addresses:
+    - 0.0.0.0/0
+
+tokens:
+  - key: blue
+    cluster_key: "eggplant"
+    description: eggplant
+    allowed_ip_addresses:
+      - 0.0.0.0/0
