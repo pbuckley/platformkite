@@ -1,0 +1,8 @@
+schemaVersion: v1.0
+
+teams:
+  - key: corn-maintainers
+    name: "Corn Maintainers"
+    description: "Maintainers for the Corn project."
+    privacy: "VISIBLE"
+    members_can_create_pipelines: true
