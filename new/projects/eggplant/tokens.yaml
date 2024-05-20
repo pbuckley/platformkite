@@ -1,0 +1,13 @@
+schemaVersion: v1.0
+
+tokens:
+  - key: blue
+    cluster_key: corn
+    description: "Blue token for the Corn cluster."
+    allowed_ip_addresses:
+      - 0.0.0.0/0
+  - key: green
+    cluster_key: corn
+    description: "Green token for the Corn cluster."
+    allowed_ip_addresses:
+      - 0.0.0.0/0

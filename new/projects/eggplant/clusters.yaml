@@ -1,0 +1,8 @@
+schemaVersion: v1.0
+
+clusters:
+  - key: eggplant
+    name: "Eggplant"
+    description: "A versatile vegetable rich in antioxidants and vitamins."
+    emoji: ":eggplant:"
+    color: "#B565A7"

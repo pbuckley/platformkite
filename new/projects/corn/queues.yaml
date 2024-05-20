@@ -1,13 +1,13 @@
 schemaVersion: v1.0
 
 queues:
-  - key: "build"
-    cluster_key: "corn"
+  - key: build
+    cluster_key: corn
     description: "The build queue for the Corn cluster."
     default: true
-  - key: "restricted"
-    cluster_key: "corn"
+  - key: restricted
+    cluster_key: corn
     description: "The restricted queue for the Corn cluster."
-  - key: "special"
-    cluster_key: "corn"
+  - key: special
+    cluster_key: corn
     description: "The special queue for the Corn cluster."

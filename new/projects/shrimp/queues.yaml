@@ -1,0 +1,13 @@
+schemaVersion: v1.0
+
+queues:
+  - key: build
+    cluster_key: shrimp
+    description: "The default queue for the Shrimp cluster."
+    default: true
+  - key: restricted
+    cluster_key: shrimp
+    description: "The restricted queue for the Shrimp cluster."
+  - key: special
+    cluster_key: shrimp
+    description: "The special queue for the Shrimp cluster."

@@ -1,0 +1,13 @@
+schemaVersion: v1.0
+
+queues:
+  - key: build
+    cluster_key: eggplant
+    description: "The build queue for the Eggplant cluster."
+    default: true
+  - key: restricted
+    cluster_key: eggplant
+    description: "The restricted queue for the Eggplant cluster."
+  - key: special
+    cluster_key: eggplant
+    description: "The special queue for the Eggplant cluster."

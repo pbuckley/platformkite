@@ -1,0 +1,8 @@
+schemaVersion: v1.0
+
+clusters:
+  - key: shrimp
+    name: "Shrimp"
+    description: "A high-protein seafood rich in omega-3 fatty acids."
+    emoji: ":fried_shrimp:"
+    color: "#FFA07A"
