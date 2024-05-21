@@ -1,0 +1,13 @@
+schemaVersion: v1.0
+
+# A stack consists of a sinlge queue, 2x tokens, and a set of agents.
+# When a queue is created we automatically generate 2 agent tokens (blue & green)
+# This allows for token rotation without downtime.
+stacks:
+  - cluster: corn
+    queue: build
+    queue_description: "The build queue for the Corn cluster."
+    queue_default: true
+    token: blue # or green
+    token_allowed_ip_addresses:
+      - 0.0.0.0/0
