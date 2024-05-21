@@ -31,8 +31,9 @@ terraform apply
 ```bash
 # temporary
 
-export BUILDKITE_ORGANIZATION_SLUG=
+export BUILDKITE_ORGANIZATION_SLUG
 export BUILDKITE_API_TOKEN=12345
+export AWS_PROFILE=default
 
 # permanent (bash)
 echo 'export BUILDKITE_API_TOKEN=12345' >> ~/.bash_profile

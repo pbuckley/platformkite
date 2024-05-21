@@ -1,0 +1,107 @@
+schemaVersion: v1.0
+
+defaults:
+  clusters.emoji: ":buildkite:"
+  clusters.color: "#000000"
+  clusters.tokens:
+    - key: blue
+      description: "blue"
+      allowed_ip_addresses:
+        - 0.0.0.0/0
+    - key: green
+      description: "green"
+      allowed_ip_addresses:
+        - 0.0.0.0/0
+  # clusters.tokens.allowed_ip_addresses:
+  #   - 0.0.0.0/0
+  # clusters.queues:
+  #   - key: new
+  #     description: "The new queue!"
+
+clusters:
+  - key: avocado
+    name: "Avocado"
+    description: "A nutrient-dense fruit high in healthy fats and fiber."
+    emoji: ":avocado:"
+    color: "#A2CFA5"
+    default_queue: build
+    queues:
+      - key: build
+        description: "The build queue for the Avocado cluster."
+        # agents:
+        #   - type: elastic-ci-stack
+        #     token_key: blue
+        #     config:
+        #       template_url: "https://s3.amazonaws.com/buildkite-aws-stack/master/aws-stack.yml"
+        #       agents_per_instance: 1
+        #       associate_public_ip_address: true
+        #       instance_type: "t4g.2xlarge"
+        #       min_size: 0
+        #       max_size: 10
+        #       root_volume_size: 50
+      - key: restricted
+        description: "The restricted queue for the Avocado cluster."
+      - key: special
+        description: "The special queue for the Avocado cluster."
+  - key: corn
+    name: "Corn"
+    description: "A staple grain rich in fiber and vitamins."
+    emoji: ":corn:"
+    color: "#FFE79B"
+    default_queue: build
+    queues:
+      # []
+      - key: build
+        description: "The build queue for the Corn cluster."
+      - key: restricted
+        description: "The restricted queue for the Corn cluster."
+      - key: special
+        description: "The special queue for the Corn cluster."
+  - key: dumpling
+    name: "Dumpling"
+    description: "A delicious food item often filled with meat or vegetables."
+    emoji: ":dumpling:"
+    color: "#F5E6CC"
+    default_queue: build
+    queues:
+      - key: build
+        description: "The build queue for the Dumpling cluster."
+      - key: restricted
+        description: "The restricted queue for the Dumpling cluster."
+      - key: special
+        description: "The special queue for the Dumpling cluster."
+  - key: eggplant
+    name: "Eggplant"
+    description: "A versatile vegetable rich in antioxidants and vitamins."
+    emoji: ":eggplant:"
+    color: "#B565A7"
+    default_queue: build
+    queues:
+      - key: build
+        description: "The build queue for the Eggplant cluster."
+      - key: restricted
+        description: "The restricted queue for the Eggplant cluster."
+      - key: special
+        description: "The special queue for the Eggplant cluster."
+    # tokens:
+    #   - key: blue
+    #     description: "blue"
+    #     allowed_ip_addresses:
+    #       - 0.0.0.0/0
+    #   - key: green
+    #     description: "green"
+    #     allowed_ip_addresses:
+    #       - 0.0.0.0/0
+  - key: shrimp
+    name: "Shrimp"
+    description: "A high-protein seafood rich in omega-3 fatty acids."
+    emoji: ":fried_shrimp:"
+    color: "#FFA07A"
+    default_queue: build
+    queues:
+      - key: build
+        description: "The build queue for the Shrimp cluster."
+      - key: restricted
+        description: "The restricted queue for the Shrimp cluster."
+      - key: special
+        description: "The special queue for the Shrimp cluster."
