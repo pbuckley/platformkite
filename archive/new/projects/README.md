@@ -1,18 +1,18 @@
 ## Animals
 
-:moose:
+:beaver:
 :donkey:
+:llama:
+:moose:
+:hippopotamus:
 :jellyfish:
 :cockroach:
 :bison:
-:beaver:
 :flamingo:
 :skunk:
 :orangutan:
 :swan:
-:hippopotamus:
 :peacock:
-:llama:
 
 ## Flowers/Trees
 

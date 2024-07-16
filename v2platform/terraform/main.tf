@@ -97,30 +97,11 @@ resource "aws_ssm_parameter" "tokens" {
   value       = buildkite_cluster_agent_token.tokens[each.key].token
 }
 
-# create aws cloudformation stacks (elastic ci stacks)
-resource "aws_cloudformation_stack" "elastic_ci_stacks" {
-  for_each = { 
-    for agent in local.agents : "${agent.cluster_key}-${agent.queue_key}-${agent.type}" => agent
-    if agent.type == "elastic-ci-stack"
-  }
-  name         = "${local.project}-${each.value.cluster_key}-${each.value.queue_key}-${each.value.type}"
-  template_url = each.value.config.template_url
-  capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM", "CAPABILITY_AUTO_EXPAND"]
-  parameters = {
-    AgentsPerInstance        = each.value.config.agents_per_instance
-    AssociatePublicIpAddress = each.value.config.associate_public_ip_address
-    InstanceTypes            = each.value.config.instance_types
-    MaxSize                  = each.value.config.max_size
-    MinSize                  = each.value.config.min_size
-    RootVolumeSize           = each.value.config.root_volume_size
-    BuildkiteAgentTokenParameterStorePath = aws_ssm_parameter.tokens["${each.value.cluster_key}-${each.value.token_key}"].name
-    BuildkiteQueue           = each.value.queue_key
-  }
-}
 
-# output "agents" {
-#   value = local.agents
-# }
+
+output "agents" {
+  value = local.agents
+}
 
 # output "tokens" {
 #   value = local.tokens

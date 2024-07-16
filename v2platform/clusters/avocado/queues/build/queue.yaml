@@ -1,0 +1,3 @@
+queues:
+  - key: build
+    description: "The build queue for the Avocado cluster."
