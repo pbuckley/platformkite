@@ -15,14 +15,27 @@ defaults:
 
 clusters:
   - key: yellow
-    name: "Yellow Cars Only"
+    name: "Yellow Cars"
     description: "A cluster for yellow cars."
     emoji: ":car-yellow:"
-    color: "#A2CFA5"
+    color: "#000000"
     default_queue: build
     queues:
       - key: build
         description: "The build queue for the yellow car cluster."
+      - key: restricted
+        description: "The restricted queue for the yellow car cluster."
+      - key: special
+        description: "The special queue for the yellow car cluster."
+  - key: blue
+    name: "Blue Cars"
+    description: "A cluster for blue cars."
+    emoji: ":car-blue:"
+    color: "#000000"
+    default_queue: build
+    queues:
+      - key: build
+        description: "The build queue for the blue car cluster."
         agents:
           - type: elastic-ci-stack
             token_key: blue
@@ -34,19 +47,6 @@ clusters:
               min_size: 0
               max_size: 5
               root_volume_size: 50
-      - key: restricted
-        description: "The restricted queue for the Avocado cluster."
-      - key: special
-        description: "The special queue for the Avocado cluster."
-  - key: blue
-    name: "Blue Cars Only"
-    description: "A cluster for blue cars."
-    emoji: ":car-blue:"
-    color: "#F5E6CC"
-    default_queue: build
-    queues:
-      - key: build
-        description: "The build queue for the blue car cluster."
       - key: restricted
         description: "The restricted queue for the blue car cluster."
       - key: special
@@ -61,10 +61,10 @@ clusters:
         allowed_ip_addresses:
           - 0.0.0.0/0
   - key: black
-    name: "Black Cars Only"
+    name: "Black Cars"
     description: "A cluster for black cars."
     emoji: ":car-black:"
-    color: "#B565A7"
+    color: "#000000"
     default_queue: build
     queues:
       - key: build
